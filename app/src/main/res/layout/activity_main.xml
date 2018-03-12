@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.example.android.itemrecorder.MainActivity">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/amount_to_paid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Total amount to be paid"
+                android:padding="12dp"
+                android:textColor="#AA2200"
+                android:background="@drawable/amount_text_view"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/person_name_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="70dp"
+                    android:background="@android:color/transparent"
+                    android:ems="100"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    android:padding="8dp"
+                    android:textColorHint="#90AA2200" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#40AA2200" />
+
+                <EditText
+                    android:id="@+id/description_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:ems="100"
+                    android:hint="Item Description"
+                    android:inputType="textLongMessage"
+                    android:padding="8dp"
+                    android:textColorHint="#90AA2200" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#40AA2200" />
+
+                <EditText
+                    android:id="@+id/amount_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:ems="100"
+                    android:hint="Amount in Rupee"
+                    android:inputType="numberDecimal"
+                    android:padding="8dp"
+                    android:textColorHint="#90AA2200" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#40AA2200" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/add_to_waitlist_button"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/backgroundbutton_main"
+                android:onClick="addToWaitlist"
+                android:text="Add Record"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Inverse"
+                android:textColor="#AA2200" />
+
+            <Button
+                android:id="@+id/see_recycler"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/backgroundbutton_main"
+                android:onClick="openRecView"
+                android:padding="12dp"
+                android:text="See List"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Inverse"
+                android:textColor="#AA2200" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
