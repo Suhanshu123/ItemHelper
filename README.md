@@ -1,6 +1,6 @@
 # ItemHelper
 
-ItemHelper is a Android Mobile Application which stores household chores in SQL Table. It has been developed mainly to help Bachelors as now they don't have to use paper and pen to write what they have bought and what their room-partners have .It also estimates the total costs.
+ItemHelper is a Android Mobile Application which stores household chores in SQL Table. It has been developed mainly to help Bachelors as now they don't have to use paper and pen to write what they have bought and what their room-partners have .It also estimates the total costs and to delete any data just swipe the respective entry either in the left or right direction.
 
 ## Splash Screen
 ![b](https://user-images.githubusercontent.com/25812257/37309933-75e88148-2668-11e8-804d-765c0aa8cfe9.PNG)
